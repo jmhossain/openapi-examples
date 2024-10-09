@@ -7,7 +7,7 @@ env:
   PLATFORM_API_PREFIX: lfg-mgmt-platform-api-ibm-common-services
   PROVIDER_ORG: lfg-enterprise
   API_FILES: dev/openapi.yaml
-  apicApikey: 51d30fe5-3dc3-4721-88fa-90da2e414f56
+
 jobs:
   run-discovery:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
         api_host: ${{ env.API_HOST }}
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
-        api_key: ${{ env.apicApikey }}
+        api_key: ${{ secrets.apicApikey }}
         if: env.API_FILES
         api_files: ${{ env.API_FILES }}
         else if: env.API_FOLDERS
