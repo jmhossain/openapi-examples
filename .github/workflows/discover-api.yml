@@ -6,7 +6,7 @@ env:
   API_HOST: apps.66ff8e739c3956c46a304ad9.ocp.techzone.ibm.com
   PLATFORM_API_PREFIX: lfg-mgmt-platform-api-ibm-common-services
   PROVIDER_ORG: lfg-life-insurance
-  API_FILES: dev/openapi.yaml,banksapi/openapi.yaml
+  API_FILES: dev/openapi.yaml
 
 jobs:
   run-discovery:
